@@ -1,0 +1,164 @@
+/* Import Google Fonts: Playfair Display for headings and Poppins for body text */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Define CSS Custom Properties (Variables) for consistent branding */
+:root {
+  --primary-color: #181818;    /* Dim Black */
+  --secondary-bg: #222222;     /* Lighter Dim Black for cards & accents */
+  --accent-color: #b38728;     /* Dark Gold */
+  --accent-hover: #8c671b;     /* Deeper Dark Gold for hover states */
+  --light-bg: #f4f4f4;         /* Soft light background */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--font-body);
+  color: #2b2b2b;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Base Heading Styles */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+/* Custom Navigation Bar with Glassmorphism Effect */
+.navbar-custom {
+  background-color: rgba(24, 24, 24, 0.95) !important;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(179, 135, 40, 0.2);
+}
+
+/* Custom Navigation Links */
+.navbar-custom .nav-link {
+  color: #d0d0d0 !important;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+/* Navigation Link Hover & Active States */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* Hero Section Background & Overlay */
+.hero-wrapper {
+  background: linear-gradient(rgba(24, 24, 24, 0.65), rgba(24, 24, 24, 0.65)),
+              url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Banner for Inner Pages */
+.page-header {
+  background: linear-gradient(rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75)),
+              url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  padding: 100px 0 60px 0;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Custom Product & Category Cards */
+.custom-card {
+  border: none;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom Card Hover Animation */
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(24, 24, 24, 0.18) !important;
+}
+
+/* Product Image Overflow Handling */
+.product-img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image Zoom Effect on Hover */
+.product-img-container img {
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover .product-img-container img {
+  transform: scale(1.08);
+}
+
+/* Custom Dark Gold Button */
+.btn-gold {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: 1px solid var(--accent-color);
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #ffffff;
+}
+
+/* Custom Dim Black Outline Button */
+.btn-outline-dark-custom {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark-custom:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Custom Accordion Styling for FAQ Page */
+.accordion-button:not(.collapsed) {
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(179, 135, 40, 0.5);
+}
+
+/* Footer Custom Styling */
+footer {
+  background-color: var(--primary-color);
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(179, 135, 40, 0.2);
+}
+
+footer a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}

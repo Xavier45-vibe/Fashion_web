@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | AURA</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">AURA<span style="color: var(--accent-color);">.</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Questions & Answers</h1>
+      <p class="lead opacity-75">Everything you need to know about purchasing with AURA</p>
+    </div>
+  </header>
+
+  <!-- FAQ ACCORDION SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <div class="accordion shadow-sm" id="faqAccordion">
+            
+            <!-- Question 1 -->
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  How are AURA products shipped internationally?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  We provide complimentary express courier shipping via DHL Express on all international orders over $500. Every parcel is fully insured.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  What is your return policy?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  We accept returns within 14 days of receipt for unworn items in original packaging with security tags attached.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  How do I select the correct size?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Specific garment measurements are listed under each product entry. You can also consult our sizing guide on the contact page.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                  Are your garments sustainably produced?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, 100% of our collections are manufactured in limited production runs to eliminate waste and prevent overproduction.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="pt-5 pb-4">
+    <div class="container text-center">
+      <h3 class="text-white fw-bold mb-3">AURA<span class="text-warning">.</span></h3>
+      <p class="small text-secondary mb-0">&copy; AURA Fashion House. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

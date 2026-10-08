@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AURA Fashion House</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Hovering Board Effect */
+    .hover-card {
+      transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">AURA<span style="color: var(--accent-color);">.</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Our Heritage</h1>
+      <p class="lead opacity-75">Crafting timeless elegance and sustainable luxury</p>
+    </div>
+  </header>
+
+  <!-- BRAND STORY SECTION -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hover-card shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=800&q=80" class="img-fluid w-100" alt="AURA Design Studio">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h6 class="text-uppercase text-warning fw-semibold">The Philosophy</h6>
+          <h2 class="display-6 fw-bold mb-4">Where Modern Art Meets Master Tailoring</h2>
+          <p class="text-muted lead fs-6">AURA was founded on a singular vision: to liberate luxury fashion from temporary trends and return it to pure artistry.</p>
+          <p class="text-muted">Every garment produced in our atelier undergoes over 40 hours of hand-stitching by master artisans. We source certified organic silk and ethically harvested wool to ensure luxury that honors the planet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h6 class="text-uppercase text-muted">What Drives Us</h6>
+        <h2 class="display-6 fw-bold">Our Core Pillars</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm border-0 h-100 text-center hover-card">
+            <div class="fs-1 text-warning mb-3"><i class="fa-solid fa-gem"></i></div>
+            <h4 class="fw-bold mb-3">Uncompromised Quality</h4>
+            <p class="text-muted small mb-0">We prioritize structural integrity, selecting durable fabrics built to endure for generations.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm border-0 h-100 text-center hover-card">
+            <div class="fs-1 text-warning mb-3"><i class="fa-solid fa-leaf"></i></div>
+            <h4 class="fw-bold mb-3">Ethical Atelier</h4>
+            <p class="text-muted small mb-0">Zero waste patterns, fair living wages, and complete supply chain transparency across all manufacturing.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm border-0 h-100 text-center hover-card">
+            <div class="fs-1 text-warning mb-3"><i class="fa-solid fa-compass"></i></div>
+            <h4 class="fw-bold mb-3">Avant-Garde Design</h4>
+            <p class="text-muted small mb-0">Architectural cuts paired with minimalist drape create iconic items for modern wardrobes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="pt-5 pb-4">
+    <div class="container text-center">
+      <h3 class="text-white fw-bold mb-3">AURA<span class="text-warning">.</span></h3>
+      <p class="small text-secondary mb-0">&copy; AURA Fashion House. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
